@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Clock, Phone } from "lucide-react";
+import { MapPin, Clock, Phone, Zap } from "lucide-react";
 
 const LocationSection = () => {
   return (
@@ -34,9 +34,7 @@ const LocationSection = () => {
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary mt-0.5" />
-                  <span className="text-muted-foreground font-body text-sm">
-                    Hamra, Beirut, Lebanon
-                  </span>
+                  <span className="text-muted-foreground font-body text-sm">Hamra, Beirut, Lebanon</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Clock className="w-5 h-5 text-primary mt-0.5" />
@@ -47,24 +45,20 @@ const LocationSection = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-primary mt-0.5" />
-                  <a href="tel:+96178995638" className="text-primary font-body text-sm hover:underline">
-                    +961 78 995 638
-                  </a>
+                  <a href="tel:+96178995638" className="text-primary font-body text-sm hover:underline">+961 78 995 638</a>
                 </div>
               </div>
             </div>
 
             <div className="bg-card border border-border rounded-sm p-6">
               <h3 className="font-display text-xl text-foreground mb-4 flex items-center gap-2">
-                <ZapIcon className="w-5 h-5 text-primary" />
+                <Zap className="w-5 h-5 text-primary" />
                 Jdeideh Branch
               </h3>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary mt-0.5" />
-                  <span className="text-muted-foreground font-body text-sm">
-                    Jdeideh, Mount Lebanon
-                  </span>
+                  <span className="text-muted-foreground font-body text-sm">Jdeideh, Mount Lebanon</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Clock className="w-5 h-5 text-primary mt-0.5" />
@@ -99,8 +93,5 @@ const LocationSection = () => {
     </section>
   );
 };
-
-// Fix: use Zap from lucide
-import { Zap as ZapIcon } from "lucide-react";
 
 export default LocationSection;
