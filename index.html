@@ -1,26 +1,280 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EZ Fitness Club | EMS &amp; Fitness Center in Beirut, Lebanon</title>
-    <meta name="description" content="EZ Fitness Club - Lebanon&#39;s premier EMS &amp; Fitness center in Hamra, Beirut. 20-minute EMS sessions equivalent to 4-hour workouts. Rated 5.0 by 63+ members.">
-    <meta name="author" content="EZ Fitness Club" />
-
-    
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="EZ Fitness Club | EMS &amp; Fitness Center in Beirut, Lebanon">
-  <meta name="twitter:title" content="EZ Fitness Club | EMS &amp; Fitness Center in Beirut, Lebanon">
-  <meta property="og:description" content="EZ Fitness Club - Lebanon&#39;s premier EMS &amp; Fitness center in Hamra, Beirut. 20-minute EMS sessions equivalent to 4-hour workouts. Rated 5.0 by 63+ members.">
-  <meta name="twitter:description" content="EZ Fitness Club - Lebanon&#39;s premier EMS &amp; Fitness center in Hamra, Beirut. 20-minute EMS sessions equivalent to 4-hour workouts. Rated 5.0 by 63+ members.">
-  <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6725b1ee-3ae0-4b38-afa5-604ea392695e/id-preview-91678f25--40d97319-b433-4734-b199-b001905fcaea.lovable.app-1772883889360.png">
-  <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6725b1ee-3ae0-4b38-afa5-604ea392695e/id-preview-91678f25--40d97319-b433-4734-b199-b001905fcaea.lovable.app-1772883889360.png">
-  <meta name="twitter:card" content="summary_large_image">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EZ Fitness Club | EMS & Fitness Center in Beirut, Lebanon</title>
+  <meta name="description" content="EZ Fitness Club - Lebanon's premier EMS & Fitness center in Hamra, Beirut. 20-minute EMS sessions equivalent to 4-hour workouts. Rated 5.0 by 63+ members." />
+  <meta name="author" content="EZ Fitness Club" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="EZ Fitness Club | EMS & Fitness Center in Beirut, Lebanon" />
+  <meta property="og:description" content="EZ Fitness Club - Lebanon's premier EMS & Fitness center in Hamra, Beirut. 20-minute EMS sessions equivalent to 4-hour workouts. Rated 5.0 by 63+ members." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="public/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="assets/logo.png" alt="EZ Fitness Club" />
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#ems-training">EMS Training</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="tel:+96178995638" class="btn-gold nav-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#ems-training">EMS Training</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+96178995638" class="btn-gold mobile-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/hero-gym.jpg" alt="EZ Fitness Club Interior" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content fade-up">
+      <div class="hero-stars">
+        <span class="stars">★★★★★</span>
+        <span class="stars-label">5.0 · 63 Reviews</span>
+      </div>
+      <h1>
+        <span>Train</span><br />
+        <span class="text-gold">Smarter.</span><br />
+        <span>Not Harder.</span>
+      </h1>
+      <p class="hero-desc">
+        Lebanon's premier EMS & Fitness center. 20 minutes of EMS training equals
+        4 hours of conventional workout. Transform your body with cutting-edge technology.
+      </p>
+      <div class="hero-btns">
+        <a href="tel:+96178995638" class="btn-gold btn-glow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Book Free Trial
+        </a>
+        <a href="#ems-training" class="btn-outline">Learn About EMS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / EMS -->
+  <section id="about"></section>
+  <section id="ems-training" class="section bg-secondary">
+    <div class="container ems-grid">
+      <div class="fade-up">
+        <span class="section-tag">REVOLUTIONARY TRAINING</span>
+        <h2>What is <span class="text-gold">EMS Training?</span></h2>
+        <p class="body-text">
+          Electrical Muscle Stimulation (EMS) uses targeted electrical impulses to activate
+          up to 90% of your muscles simultaneously — far more than conventional exercise.
+          Each 20-minute session delivers the equivalent of a 4-hour traditional workout.
+        </p>
+        <p class="body-text">
+          Perfect for busy professionals, athletes seeking an edge, or anyone looking to
+          transform their fitness journey. Our expert coaches guide you through every session
+          at our Hamra and Jdeideh locations.
+        </p>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div><div class="stat-value">20 min</div><div class="stat-label">Per Session</div></div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-2-3.86-2-5.5C8 1.5 10 0 12 0s4 1.5 4 3.5c0 1.64-.93 3.36-2 5.5-.5 1-1 1.62-1 3a2.5 2.5 0 0 0 2.5 2.5"/><path d="M12 18v4"/></svg>
+            </div>
+            <div><div class="stat-value">500+</div><div class="stat-label">Calories Burned</div></div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            </div>
+            <div><div class="stat-value">90%</div><div class="stat-label">Muscle Activation</div></div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div><div class="stat-value">4x</div><div class="stat-label">More Effective</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="ems-image-wrap fade-up">
+        <div class="ems-image-container">
+          <img src="assets/ems-training.jpg" alt="EMS Training at EZ Fitness Club" />
+          <div class="ems-image-overlay"></div>
+        </div>
+        <div class="ems-corner-accent"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section bg-dark">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">TESTIMONIALS</span>
+        <h2>What Our <span class="text-gold">Members</span> Say</h2>
+        <div class="review-rating">
+          <span class="stars">★★★★★</span>
+          <span class="rating-number">5.0</span>
+          <span class="rating-count">· 63 reviews</span>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card fade-up">
+          <div class="quote-icon">"</div>
+          <p>"I recently tried EZGYMLB and had an amazing experience! From the moment I walked in, I was impressed by the clean, well-equipped facilities and the welcoming atmosphere. The staff is incredibly friendly and knowledgeable, always ready to help."</p>
+          <div class="review-author">
+            <div class="author-avatar">J</div>
+            <div><div class="author-name">Joe Yucef</div><div class="author-time">a year ago</div></div>
+          </div>
+          <div class="stars small">★★★★★</div>
+        </div>
+        <div class="review-card fade-up">
+          <div class="quote-icon">"</div>
+          <p>"I've been training with Jimmy for 2 months now and I can see amazing results! Jimmy is a great trainer, well experienced, patient, encouraging and very positive that the session's time flies no matter how hard the training is."</p>
+          <div class="review-author">
+            <div class="author-avatar">F</div>
+            <div><div class="author-name">Farah R.</div><div class="author-time">a year ago</div></div>
+          </div>
+          <div class="stars small">★★★★★</div>
+        </div>
+        <div class="review-card fade-up">
+          <div class="quote-icon">"</div>
+          <p>"I remember being very anxious when starting EMS training since I used to hate fitness training, but after one or two sessions I started enjoying my workout. Thanks to Coach Jimmy in Hamra and Coach Kevin in Jdeideh branch, I feel very motivated."</p>
+          <div class="review-author">
+            <div class="author-avatar">M</div>
+            <div><div class="author-name">Maria Tayyar</div><div class="author-time">a year ago</div></div>
+          </div>
+          <div class="stars small">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="location" class="section bg-secondary">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">FIND US</span>
+        <h2>Visit <span class="text-gold">EZ Fitness</span></h2>
+      </div>
+      <div class="location-grid">
+        <div class="fade-up">
+          <div class="location-card">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              Hamra Branch
+            </h3>
+            <div class="location-info">
+              <div class="info-row">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Hamra, Beirut, Lebanon</span>
+              </div>
+              <div class="info-row">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div><p>Mon - Sat: 6:00 AM - 10:00 PM</p><p>Sunday: Closed</p></div>
+              </div>
+              <div class="info-row">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+96178995638">+961 78 995 638</a>
+              </div>
+            </div>
+          </div>
+          <div class="location-card" style="margin-top:1.5rem;">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              Jdeideh Branch
+            </h3>
+            <div class="location-info">
+              <div class="info-row">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Jdeideh, Mount Lebanon</span>
+              </div>
+              <div class="info-row">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div><p>Mon - Sat: 6:00 AM - 10:00 PM</p><p>Sunday: Closed</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-wrap fade-up">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.0!2d35.4795!3d33.8969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDUzJzQ5LjAiTiAzNcKwMjgnNDYuMCJF!5e0!3m2!1sen!2slb!4v1234567890"
+            width="100%" height="100%" style="border:0;min-height:400px;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="EZ Fitness Club Location"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section bg-dark contact-section">
+    <div class="contact-glow"></div>
+    <div class="container section-header fade-up" style="position:relative;z-index:1;">
+      <span class="section-tag">GET STARTED</span>
+      <h2>Ready to <span class="text-gold">Transform?</span></h2>
+      <p class="body-text" style="max-width:600px;margin:0 auto 2.5rem;">
+        Book your free trial session today. Experience the power of EMS training
+        and see why we're rated 5.0 by our members.
+      </p>
+      <div class="contact-btns">
+        <a href="tel:+96178995638" class="btn-gold btn-glow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +961 78 995 638
+        </a>
+        <a href="https://wa.me/96178995638" target="_blank" rel="noopener noreferrer" class="btn-outline">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/ezgymlb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="assets/logo.png" alt="EZ Fitness Club" class="footer-logo" />
+      <p>© 2025 EZ Fitness Club. All rights reserved. Hamra & Jdeideh, Beirut.</p>
+      <div class="footer-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        EMS & FITNESS
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
